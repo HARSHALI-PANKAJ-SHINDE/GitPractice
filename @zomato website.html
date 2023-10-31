@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+          
+        }
+        body{
+            margin: 0;
+            width: 100%;
+        }
+        .img-container{
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+        .img-container img{
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+            color: red;
+            font-size: 20px;
+        }
+        header{
+            position: relative;
+        }
+        .menu{
+    position: absolute;
+     top: 30px;
+      right: 50px;
+       }
+      
+       .menu ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+        
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color: white;
+          font-size: 30px;
+          right: 40%;
+    }
+
+p{
+    position: absolute;
+    top:20px;
+    font-size: 25px;
+    color: white;
+}
+h1{
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+h3{
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+.search-container{
+      background-color: white;
+      width: 50%;
+      height: 30px;
+      position: absolute;
+      bottom: 20%;
+      transform: translatex(50%);
+      border-radius: 10px;
+}   
+input{
+    margin: 1px;
+    padding: 6px;
+    border: none;
+    width: 30%;
+}     
+  select{
+    border: none;
+  }            
+  /*section1*/
+  #section1{
+    margin-top: 40px;
+    padding: 50px;
+  }
+  .okk{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .feactures-img{
+       width: 500px
+       height: 200px;
+       overflow: hidden;
+  }
+  .feactures{
+    overflow: hidden;
+    border-radius: 10px;
+    border:0.5px solid  lightgray;
+    text-align: center;
+    
+  }
+ 
+  .feactures-img img{
+    width: 100%;
+  } 
+  .feactures:hover{
+    transform: scale(1.05);
+    transition: transform 0.4s;
+    cursor: pointer;
+  }
+
+
+  
+
+
+     /****section2****/
+  .section-2-left h2{
+    padding: 40px;
+    font-size: 40px;
+    margin: 0;
+    
+  }
+  .section-2-left h4{
+    padding: 40px;
+    margin: 0;
+    overflow: hidden;
+    transform: translatey(-80px);
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .section-2-right h4{
+         padding: 20px;
+         margin: 0;
+        text-align: right;
+        font-size: 20px;
+        font-weight: 200;
+        color: brown;
+        transform: translatey(20%);
+        
+  }
+  .section-2-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+.element{
+      margin: 0;
+      padding: 0;
+    display: flex;
+       justify-content: space-around;
+       overflow: hidden;
+       
+       /*box-shadow: 2px 2px 5px gray;*/
+    
+  }
+  .section-2-items{
+       border: 1px solid gray;
+       margin: 25px;
+       padding: 0;
+         }
+         .section-2-items:hover{
+          transform: translatey(-50px);
+           transition: 0.4s;
+         } 
+ .section-2-items img{
+    padding: 0;
+      margin: 0;
+        }
+
+.Description{
+    padding: 0 10px;
+   }
+ .Description h4{
+   margin: 0;
+    font-size: 20px;
+    
+     
+  }
+  .Description h5{
+    margin: 0;
+    font-size: 15px;
+  }
+  #footer{
+      border: 5px solid black;
+  
+  }
+  .icons2 h4{
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+  }
+  .icons2{
+    font-size: 30px;
+    padding: 20px;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 44%;
+  }
+  .icons2 :hover{
+           color: blue;
+  }
+    </style>
+    <header>
+        <div class="img-container">
+            <img src="./zomato img3.jpg">
+        </div>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <p>Get the App</p>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#investor Relations">Investor Relations</a></li>
+                    <li><a href="#restaurant">Restaurant</a></li>
+                    <li><a href="#login">Log In</a></li>
+                    <li><a href="#signup">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content">
+           <i><h1>ZOMATO</h1></i>
+           <h3>Discover the best food & drinks in Pune</h3>
+           
+           <div class="search-container">
+            <div class="detectionlocation">
+                <i class="bi bi-geo-alt-fill" style="font-size: 18px; color: red;"></i>
+                <input type="text" placeholder="Pune">
+                <select id="location" name="location" size="0" value="select location"></select>
+                 
+               
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search for the Restaurant or a dish">
+            </div>
+                </div>
+        </div>
+ </header>
+     <section id="section1">
+     <div class="okk">
+     <div class="feactures">
+        <div class="feactures-img">
+     <img src="./dish img.jpg">
+     </div>
+ <h2>Order Online</h2>
+ <h4>Stay Home & order to your Doorstep</h4>
+</div>
+
+<div class="feactures">
+    <div class="feactures-img">
+  <img src="./dining img.jpg" height="200px" width="300px">
+</div>
+<h2>Dining</h2>
+<h4>View the citys favorite dining values</h4>
+</div>
+
+<div class="feactures">
+    <div class="feactures-img">
+ <img src="./clubs img.jpg">
+</div>
+<h2>Nightlife & Clubs</h2>
+<h4>Explore the citys top nightlife outlets</h4>
+</div>
+</div>
+</section>
+
+
+    <section id="section2">
+      <div class="section-2-top">
+    <div class="section-2-left">
+        <h2>Collections</h2>
+        <h4>Explore curated list of top restraurants.cafe,pubs,and bars in pune ,based on trends.</h4>
+      </div>
+        <div class="section-2-right">
+            <h4>All collections in pune <i class="bi bi-caret-right-fill"></i><h4>
+            </div>
+            </div>
+            
+    
+           <div class="element">
+            <div class="section-2-items">
+                <img src="./rromantic dinner.jpg" height="200px" width="300px">
+                <div class="Description">
+                    <h4>Romantic Dining</h4>
+                    <h5>15 Places <i class="bi bi-caret-right-fill"></i></h5>
+                </div>
+                </div>
+
+                <div class="section-2-items">
+                <img src="./opn img.jpg"  height="220px" width="300px">
+                <div class="Description">
+                    <h4>New in town</h4>
+                    <h5>13 Places <i class="bi bi-caret-right-fill"></i></h5>
+                </div>
+                </div>
+
+                <div class="section-2-items">
+                <img src="./insta-worty places.jpg">
+                <div class="Description">
+                    <h4>Insta-worthy Places</h4>
+                    <h5>12 Places <i class="bi bi-caret-right-fill"></i></h5>
+                </div>
+                 </div>
+
+                <div class="section-2-items">
+                <img src="./dine in sea img.jpg">
+                <div class="Description">
+                    <h4>Dine-in with a sea view</h4>
+                    <h5>12 Places <i class="bi bi-caret-right-fill"></i></h5>
+                </div>
+            </div>
+          </div>                                                           
+        </div>
+</section>
+<section id="footer">
+  <div class="icons2">
+      <h4>Contact Us</h4>
+      
+  
+      <i class="bi-whatsapp"></i>
+      <i class="bi-twitter"></i>
+      <i class="bi-instagram"></i>
+      <i class="bi-facebook"></i>
+  </div>
+  
+</section>
+</body>
+</html>
