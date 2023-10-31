@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <style>
+       html{
+        scroll-behavior: smooth;
+       }
+       #home{
+            width: 100%;
+            height: 100vh;
+        }
+        nav{
+            width: 100%;
+            height: 70px;
+            border-bottom: 1px solid gray;
+            box-shadow: 2px 0px 5px gray ;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+       
+        
+        .logo{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .menu a{
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+            padding: 10px 20px;
+            margin: 5px;
+            font-weight: bold;
+        }
+        .menu a:hover{
+            background-color: black;
+            color: white;
+        }
+        .menu a:last-child{
+            background: red;
+            color: white;
+        }
+        .menu a:last-child:hover{
+            background: black;
+            color: white;
+        }
+      .left{
+           flex-basis: 50px;
+      }
+      
+      .right{
+        position: absolute;
+        top: 30%;
+        right: 20px;
+        
+      }
+      .right h2{
+        font-size: 50px;
+      }
+      .right p{
+        font-size: 25px;
+      }
+      button{
+        background: red;
+        color: white;
+        font-size: 25px;
+         }
+         button:hover{
+          transform: rotate(200deg);
+          background-color: orange;
+         }
+      .icons{
+          position: absolute;
+            bottom: 15%;
+            right: 33%;
+            color: blue;
+            font-size: 25px;
+      }
+      .icons:hover{
+        color: blueviolet;
+      }
+      #featured{
+        padding: 50px 0px;
+        font-size: 50px;
+        text-align: center;
+      }
+      .wrapper{
+            display:grid;
+            grid-template-columns: repeat(4,20%);
+            grid-auto-rows: minmax(200px,auto);
+            grid-gap: 1em;
+      }
+      .wrapper{
+        width: 100%;
+        overflow: hidden;
+      }
+      .wrapper div{
+        border: 1px solid gray;
+        position: relative;
+      }
+      .box1{
+        grid-row: 1/3;
+        grid-column: 1/3;
+      }
+      .price{
+        position: absolute;
+          top: 0;
+        left: 0;
+        font-size: 20px;
+        color: white;
+       background: black;
+          }
+     .wrapper div img:hover{
+        transform: scale(1.2);
+        transition: 0.4 linear;
+
+     }
+      #man{
+        padding: 80px 0px;
+      }
+     .man-row{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+          }
+      .man-box{
+        box-shadow: 2px 3px 5px grey;
+        padding: 10px;
+        
+      }
+      .man-box img{
+          width: 100%;
+      }
+ h2{
+      font-size: 25px;
+      margin: 20px 0px;
+      
+}
+h3{
+    font-size: 25px;
+    background: black;
+    color: white;
+    margin: 10px;
+}
+.man-box:hover{
+  transform: translatey(-20px );
+  transition: 0.4s;
+}
+#footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 10px;
+    margin: 50px;
+}
+.icons2{
+  font-size: 30px;
+  color: green;
+}
+
+    </style>
+    <header id="home">
+        <nav>
+            <div class="logo">E-Shop</div>
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#featured">Featured</a>
+                <a href="#man">Man</a>
+                <a href="#women">Women</a>
+                <a href="#shop">Shop</a>
+            </div>
+            </nav>
+
+          
+                <div class="left">
+                    <img src="./modern sandal2.jpg">
+                </div>
+                
+                <div class="right">
+                
+                    <h2>Best Festival offers</h2>
+        <p>We are providing best quality materials.We have best<br>
+             quality sandals  and shoes for mens and womens.</p>
+   <b><p>50% Discount!!!</p></b>
+
+          <button>Shop Now</button>
+                </div>
+            </div>
+
+            <div class="icons">
+                <i class="bi-whatsapp"></i>
+                <i class="bi-twitter"></i>
+                <i class="bi-instagram"></i>
+                <i class="bi-facebook"></i>
+            </div>
+       
+<div id="featured">
+    <h1>Featured</h1>
+    <div class="wrapper">
+    <div class="box1">
+        <img src="modern sandal2.jpg"  width="70%" height="80%">
+        <div class="price">Price: Rs.250</div>
+    </div>
+    <div>
+        <img src="./sandal img4.jpg" width="70%" height="70%">
+         <div class="price">Price: Rs.200</div>
+    </div>
+    <div>
+        <img src="./sandal img5.jpg" width="80%" height="80%">
+         <div class="price">Price: Rs.180</div>
+    </div>
+    <div>
+        <img src="./sandal img6.jpg" width="70%" height="70%">
+         <div class="price">Price: Rs.170</div>
+    </div>
+    <div>
+        <img src="party ware sandal.jpg" width="80%" height="80%">
+         <div class="price">Price: Rs.150</div>
+    </div>
+</div>
+
+
+<section id="man">
+  <div class="man-row">
+<div class="man-box">
+    <img src="./man shoes3.jpg" height="30%" width="30%">
+    <h2>nike ferr TR<br>$129.99</h2>
+    <h3>Add to cart</h3>
+    </div>
+
+<div class="man-box">
+    <img src="./man sandal3.jpg">
+    <h2>nike ferr TR<br>$129.99</h2>
+    <h3>Add to cart</h3>
+    </div>
+
+    <div class="man-box">
+    <img src="./man sandal4.jpg">
+    <h2>nike ferr TR<br>$129.99</h2>
+    <h3>Add to cart</h3>
+    </div>
+
+    <div class="man-box">
+    <img src="./man shoes2.jpg" height="100%" width="100%">
+    <h2>nike ferr TR<br>$129.99</h2>
+    <h3>Add to cart</h3>
+</div>
+
+    <div class="man-box">
+    <img src="./man sandal2.jpg">
+    <h2>nike ferr TR<br>$129.99</h2>
+    <h3>Add to cart</h3>
+</div>
+</section>
+
+
+
+<section id="women">
+  <div class="man-row">
+    <div class="man-box">
+    <img src="./sandal img4.jpg">
+    <h2>nike ferr TR<br>$129.99</h2>
+    <h3>Add to cart</h3>
+    </div>
+
+    <div class="man-box">
+    <img src="./sandal img5.jpg">
+    <h2>nike ferr TR<br>$129.99</h2>
+    <h3>Add to cart</h3>
+    </div>
+
+<div class="man-box">
+    <img src="./modern sandal.jpg" height="50%" width="50%">
+    <h2>nike ferr TR<br>$129.99</h2>
+    <h3>Add to cart</h3>
+    </div>
+   
+    <div class="man-box">
+    <img src="./sandal img5.jpg" >
+    <h2>nike ferr TR<br>$129.99</h2>
+    <h3>Add to cart</h3>
+    </div>
+   </section>
+
+<section id="footer">
+  <h2>Developed By Harshali Shinde</h2>
+  <div class="icons2">
+  <i class="bi-whatsapp"></i>
+  
+  <i class="bi-instagram"></i>
+  </div>
+</section>
+  
+
+    </header>
+</body>
+</html>
